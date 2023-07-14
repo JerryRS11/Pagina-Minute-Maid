@@ -1,0 +1,955 @@
+/*Esto es un comentario en CSS*/
+
+/*Vista de escritorio*/
+
+/*HEADER*/
+
+/*Estilo de letra externa*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*Estilo general*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Box-sizzing ajusta el tamaño de la caja tanto de relleno como de margen
+   (margin y padding)*/
+   /*Text-decoration elimina la linea de los enlaces*/
+   /*List-style elimina los bullets de las listas*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box; 
+   text-decoration: none; 
+   list-style: none;     
+}
+
+/*Estilo de letra para cuerpo de página*/
+body{
+   font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Aplicar estilo a párrafos*/
+p{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Aplicar estilo a la clase container*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+}
+
+/*Aplicar estilo a encabezado*/
+   /*VH significa ViewHeight*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+header{
+   background: linear-gradient(
+      180deg,
+      rgba(251,205,49,1) 0%,
+      rgba(249,196,40,1) 51%,
+      rgba(246,179,32,1) 100%
+      );
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+   }
+
+/*Aplicar estilos a la clase menu*/
+   /*La propiedad position define el tipo de posicionamiento para colocar un 
+   elemento*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+   /*La propiedad bottom especifica la distancia entre el margen inferior del
+   elemento y el margen inferior de su contenedor*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+.menu{
+   position: absolute;
+   top:20px;
+   left:0;
+   right:0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*Aplicar estilo a la imagen de la clase logo (Encabezado)*/
+.logo img{
+   width: 40px;
+}
+
+/*Aplicar estilo a la lista del menu de navegación*/
+   /*La posición relativa hace que se puedan modificar las propiedades del
+   elemento*/
+   /*La propiedad float permite a un elemento flotar hacia un lado u otro y 
+   ocupar el espacio disponible*/
+   /*Float:left hace que el elemento flote a la izquierda*/
+.menu .navbar ul li{
+   position: relative;
+   float: left;
+}
+
+/*Aplicar estilo a enlaces de la lista del menu de navegación*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Display: block muestra el elementos en una nueva linea y
+   tamaño personalizado*/
+.menu .navbar ul li a{
+   font-size: 18px;
+   padding: 20px;
+   color:#3F3F3F;
+   display: block;
+   font-weight: bold;
+}
+
+/*Aplicar estilo al pasar por los enlaces del menu de navegación*/
+.menu .navbar ul li a:hover{
+   color: #E06927;
+}
+
+/*Aplicar estilo a las imagenes de la clase socials-1*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.socials-1 img{
+   width: 30px;
+   margin-right: 15px;
+}
+
+/*Aplicar estilo al identificador menu*/
+   /*Display: none oculta un elemento sin eliminarlo*/
+#menu{
+   display: none;
+}
+
+/*Aplicar estilo al icono de la clase menu*/
+.menu-icono{
+   width: 25px;
+}
+
+/*Aplicar estilo a las etiquetas del menu*/
+   /*Display: none oculta un elemento sin eliminarlo*/
+.menu label{
+   cursor:pointer;
+   display: none;
+}
+
+/*Aplicar estilo al contenido del encabezado*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.header-content{
+   padding: 100px 0;
+   display:flex;
+   align-items:center;
+}
+
+/*Aplicar estilo a la clase txt del encabezado*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.header-txt{
+   width: 50%;
+   padding-right: 100px;
+}
+
+/*Aplicar estilo a titulo 1 de la clase header*/
+   /*Line-height sirve para la altura de la letra*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.header-txt h1{
+   font-size: 140px;
+   line-height: 150px;
+   color:#FFFFFF;
+   margin-bottom: 25px;
+}
+
+/*Aplicar estilo a párrafos*/
+   /*La propiedad margin aplica margenes a un elemento*/
+p{
+   font-size: 14px;
+   color: #424242;
+   margin-bottom: 35px;
+}
+
+/*Aplicar estilo a botón 1*/
+   /*Display: inline-block muestra el elemento en la misma linea y
+   tamaño personalizado*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.btn-1{
+   display: inline-block;
+   padding: 13px 30px;
+   background-color: #F55442;
+   color:#FFFFFF;
+   border-radius: 25px;
+   font-size: 18px;
+}
+
+/*Aplicar estilo a botón 1 al pasar por él*/
+.btn-1:hover{
+   background-color: #EAFE7A;
+   color:#442F08 ;
+}
+
+/*Aplicar estilo a la clase header-img*/
+.header-img{
+   width: 50%;
+   text-align: center;
+}
+
+/*Aplicar estilo a la imagen de la clase header-img*/
+.header-img img{
+   width: 550px;
+}
+
+/*ABOUT*/
+
+/*Aplicar estilo a la clase about*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.about{
+   padding: 100px 0;
+   background-color: #EFEFEF;
+}
+
+/*Aplicar estilo al contenido de la clase about*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La posición relativa hace que se puedan modificar las propiedades del
+   elemento*/
+.about-content{
+   display:flex;
+   position:relative;
+}
+
+/*Aplicar estilo a imagen 1 de la clase about*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad rotate se usa para rotar ub elemento u objeto*/
+.ab1 {
+   position:absolute;
+   width: 50px;
+   left:0;
+   top:0;
+   rotate:220deg;
+}
+
+/*Aplicar estilo a imagen 2 de la clase about*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad rotate se usa para rotar ub elemento u objeto*/
+.ab2{
+   position:absolute;
+   width:50px;
+   left:750px;
+   top:450px;
+   rotate:380deg;
+}
+
+/*Aplicar estilo a imagen 3 de la clase about*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+.ab3{
+   position:absolute;
+   width:150px;
+   right:0;
+}
+
+/*Aplicar estilo a la clase about-img*/
+.about-img{
+   width: 50%;
+   text-align: center;
+}
+
+/*Aplicar estilo a imagen de la clase about-img*/
+.about-img img{
+   width:350px;
+}
+
+/*Aplicar estilo a txt de la clase about*/
+.about-txt{
+   width: 50%;
+}
+
+.about-txt a{
+   text-align: center;
+   width: 160px;
+}
+
+/*Aplicar estilo a titulos*/
+   /*Line-height sirve para la altura de la letra*/
+   /*La propiedad margin aplica margenes a un elemento*/
+h2{
+   font-size: 80px;
+   line-height: 90px;
+   color:#3F3F3F;
+   margin-bottom: 25px;
+}
+
+/*Aplicar estilo a botón 2*/
+   /*Display: inline-block muestra el elemento en la misma linea y
+   tamaño personalizado*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.btn-2{
+   display: block;
+   padding: 13px 45px;
+   margin-left: 220px;
+   margin-top: 25px;
+   background-color: #E56820;
+   color:#FFFFFF;
+   border-radius: 25px;
+   font-size: 18px;
+   border:0;
+   font-family: 'Bebas Neue', sans-serif;
+   cursor:pointer;
+   align-items: center;
+}
+
+/*Aplicar estilo a botón 2 al pasar por él*/
+.btn-2:hover{
+   background-color: #F9AD20;
+   color:#442F08 ;
+}
+
+/*INFORMATION*/
+
+/*Aplicar estilo a clase information*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.information{
+   padding:100px 400px 400px 400px;
+   text-align: center;
+}
+
+/*Aplicar estilo al contenido de la clase content*/
+   /*La posición relativa hace que se puedan modificar las propiedades del
+   elemento*/
+.information-content{
+   position: relative;
+}
+
+/*Aplicar estilo a imagen 1 de la clase information*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+   /*La propiedad rotate se usa para rotar ub elemento u objeto*/
+.in1{
+   position:absolute;
+   width:50px;
+   left:0;
+   right:0;
+   rotate:220deg;
+}
+
+/*Aplicar estilo a imagen 2 de la clase information*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad right especifica la distancia entre el margen derecho del
+   elemento y el margen derecho de su contenedor*/
+   /*La propiedad rotate se usa para rotar ub elemento u objeto*/
+.in2{
+   position:absolute;
+   width:50px;
+   top:0;
+   right:0;
+   rotate:40deg;
+}
+
+/*Aplicar estilo a imagen 3 de la clase information*/
+   /*La posición absoluta fija una posición y no se le puede modificar las
+   propiedades al elemento*/
+   /*La propiedad left especifica la distancia entre el margen izquierdo del
+   elemento y el margen izquierdo de su contenedor*/
+   /*La propiedad top especifica la distancia entre el margen superior del
+   elemento y el margen superior de su contenedor*/
+   /*La propiedad rotate se usa para rotar ub elemento u objeto*/
+.in3{
+   position:absolute;
+   width: 250px;
+   left:-200px;
+   top:300px;
+   rotate:220deg;
+}
+
+/*Aplicar estilo a la clase contact*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad flex-direction especifica como colocar los objetos al contenedor
+   definiendo el eje principal y la dirección*/
+.contact{
+   padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/*MAIN*/
+
+/*Aplicar estilo a la tabla de la clase contact*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad box-shadow añade una sombra alrededor del elemento*/
+   /*Box-shadow = posición x | posición y | tamaño de sombra | color de sombra*/
+.contact-table{
+   padding: 20px 25px 25px 25px;
+   box-shadow: 0px 0px 20px #515A5A;
+   text-align: center;
+   width: 700px;
+   margin-bottom: 190px;
+   margin-left: -70px;
+}
+
+/*Aplicar estilo a los span de la tabla de la clase contact*/
+.contact-table span{
+   font-size: 40px;
+   color:#AA7D5E;
+}
+
+/*Aplicar estilo a titulos de la tabla de la clase contact*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.contact-table h3{
+   font-size: 60px;
+   color:#3F3F3F;
+   margin-bottom: 25px;
+}
+
+/*Aplicar estilos a la tabla*/
+   /*Border-collapse crea una fusión automática de todos los bordes adyacentes*/
+   /*La propiedad margin aplica margenes a un elemento*/
+table{
+   text-align: center;
+   margin: 0 auto;
+   border-collapse: collapse;
+   color:black;
+}
+
+/*Aplicar estilo a la clase ingridients de la tabla*/
+   /*Border-collapse crea una fusión automática de todos los bordes adyacentes*/
+.ingridients{
+   width: 100%;
+}
+
+/*Aplicar estilo a los encabezados (th) y columnas de la tabla (td) de
+la clase ingridients*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*La propiedad padding aplica relleno a un elemento*/
+th,td{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 1px;
+   width: 10%;
+}
+
+/*Aplicar estilo a las filas de la tabla*/
+tr:nth-child(even){
+   background-color: #F2F2F2;
+}
+
+/*Aplicar estilo a las filas al pasar por ellas*/
+tr:hover{
+   background-color: #DDDDDD;
+}
+
+/*Aplicar estilos a los encabezados de la tabla*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+th{
+   padding: 3px 0;
+   text-align: center;
+   background-color: #FBF008;
+   color:#442F08;
+   border-bottom: solid 1px #584823;
+}
+
+/*Aplicar estilos al formulario*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+.form{
+   display: flex;
+   flex-direction:column ;
+}
+
+/*Aplicar estilos a la clase campo del formulario*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   /*Padding: arriba y abajo  |  izquierda y derecha*/
+.campo{
+   padding: 17px 16px;
+   background-color: #F7F7F7;
+   border-radius: 25px;
+   margin-right: 90px;
+   margin-left: 42px;
+   margin-top: 4px;
+   margin-bottom: 6px;
+   width:100%;
+   max-width: 500px;
+   border: 1px solid #E8E8E8;
+   outline: none;
+   color:#3F3F3F;
+   text-align: center;
+   font-size: 24px;
+   align-items: center;
+}
+
+/*Aplicar estilos al placeholder del formulario*/
+.campo::placeholder{
+   color:#A3A3A3;
+   align-items: center;
+}
+
+/*Aplicar estilo a contenido de formulario*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.form-content{
+   padding: 5px 5px 70px 0;
+   margin-top: -150px;
+   margin-left: 1px;
+   text-align: center;
+}
+
+/*Aplicar estilo al titulo del formulario*/
+.form-content h2{
+   font-size: 50px;
+}
+
+/*FOOTER*/
+
+/*Aplicar estilo a la clase pie del footer*/
+.pie{
+   background-color:#FFC203;
+}
+
+/*Aplicar estilos a la imagen de la clase icon del footer*/
+.logo2 img{
+   width: 60px
+}
+
+/*Aplicar estilos a la clase logo2 del footer*/
+   /*Se usa gap para especificar el espacio entre filas y columnas*/
+.logo2{
+   display:flex;
+   align-items: center;
+   gap: 20px;
+}
+
+/*Aplicar estilos al párrafo de la clase logo2 del footer*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.logo2 p{
+   font-size: 60px;
+   font-weight: bold;
+   color: #E06927;
+   align-items: center;
+   padding-top: 25px;
+}
+
+/*Aplicar estilos a la clase contPie*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-between se usa para dejar espacio entre elementos*/
+   /*La propiedad padding aplica relleno a un elemento*/
+.contPie{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/*Aplicar estilos a los titulos de la clase contPie2*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.contPie2 h2{
+   font-size: 25px;
+   color:#E06927;
+   margin-bottom: -15px;
+   text-align: center;
+   margin-top: -15px;
+}
+
+/*Aplicar estilo a los bloques de la clase contPie2*/
+   /*La propiedad flex-direction especifica como colocar los objetos al contenedor
+   definiendo el eje principal y la dirección*/
+.contPie2 div{
+   display: flex;
+   flex-direction: column;
+}
+
+/*Aplicar estilo a los enlaces de la clase contPie2*/
+   /*La propiedad padding aplica relleno a un elemento*/
+   /*La propiedad margin aplica margenes a un elemento*/
+.contPie2 a{
+   text-decoration: none;
+   color:#503705;
+   font-size: 24px;
+   padding-top: 0;
+   margin-top: 2px;
+   text-align: center;
+}
+
+/*Aplicar estilo al pasar por los enlaces de la clase contPie2*/
+.contPie2 a:hover{
+   color:white;
+}
+
+/*Aplicar estilos a la clase contPie2*/
+   /*La propiedad display define el tipo de caja usado para presemtar el elemento
+   en pantalla*/
+   /*La propiedad flex establece un contenedor en bloque, similar a block (ocupa
+   todo el ancho del padre).*/
+   /*La propiedad space-evenly distribuye el espacio entre los elementos de manera
+   uniforme*/
+   /*Se usa gap para especificar el espacio entre filas y columnas*/
+.contPie2{
+   display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 23px;
+}
+
+/*Aplicar estilo a las imagenes de la clase socials-1*/
+   /*La propiedad margin aplica margenes a un elemento*/
+   .socials-2 img{
+      width: 50px;
+      margin-right: 45px;
+   }
+
+/*Vista móvil o dispositivos*/
+
+/*Aplicar diseño a dispositivos móviles*/
+@media(max-width:1125px){
+
+   /*Cambio de tamaño del menu*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .menu{
+      padding: 30px;
+      top: 0;
+   }
+
+   /*Cambiar tamaño de etiquetas del menu*/
+      /*Display:initial utiliza las propiedades iniciales del elemento*/
+   .menu label{
+      display: initial;
+   }
+
+   /*Cambiar diseño de iconos de encabezado*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .socials-1{
+      display: none;
+   }
+
+   /*Cambiar tamaño de barra de navegación*/
+      /*La propiedad position define el tipo de posicionamiento para colocar un 
+      elemento*/
+      /*La posición absoluta fija una posición y no se le puede modificar las
+      propiedades al elemento*/
+      /*La propiedad top especifica la distancia entre el margen superior del
+      elemento y el margen superior de su contenedor*/
+      /*La propiedad left especifica la distancia entre el margen izquierdo del
+      elemento y el margen izquierdo de su contenedor*/
+      /*La propiedad right especifica la distancia entre el margen derecho del
+      elemento y el margen derecho de su contenedor*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .menu .navbar{
+      position: absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background-color: #3F3F3F;
+      display: none;
+   }
+
+   /*Cambiar tamaño de lista de navegación*/
+   .menu .navbar ul li{
+      width: 100%;
+   }
+
+   /*Cambiar estilo de enlaces de lista de navegación*/
+   .menu .navbar ul li a{
+      color:#FFFFFF;
+   }
+
+   /*Cambiar estilo de marcador de página del menu de navegación*/
+      /*Display:initial utiliza las propiedades iniciales del elemento*/
+   #menu:checked ~ .navbar {
+      display: initial;
+   }
+
+   /*Cambiar tamaño de header*/
+   .header{
+      min-height: 0vh;
+   }
+
+   /*Cambiar contenido de header*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad flex-direction especifica como colocar los objetos al contenedor
+      definiendo el eje principal y la dirección*/
+      /*Padding: arriba y abajo  |  izquierda y derecha*/
+   .header-content{
+      padding: 130px 30px 80px 30px;
+      flex-direction: column;
+   }
+
+   /*Cambiar tamaño de la clase header-txt*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .header-txt{
+      width: 100%;
+      padding-right: 0;
+      text-align:center;
+      margin-bottom: 15px;
+   }
+
+   /*Cambiar tamaño de titulo de header de la clase txt*/
+      /*Line-height sirve para la altura de la letra*/
+   .header-txt h1{
+      font-size: 90px;
+      line-height: 100px;
+   }
+
+   /*Cambiar tamaño de la clase header-img*/
+   .header-img{
+      width: 100%;
+   }
+
+   /*Cambiar tamaño de la imagen de la clase header-img*/
+   .header-img img{
+      width: 250px;
+   }
+
+   /*Cambiar tamaño de la clase about*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .about{
+      padding: 30px;
+   }
+
+   /*Cambiar tamaño de contenido de la clase about*/
+      /*La propiedad flex-direction especifica como colocar los objetos al contenedor
+      definiendo el eje principal y la dirección*/
+   .about-content{
+      flex-direction: column;
+   }
+
+   /*Cambiar estilos de set de imagenes de la clase about*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .ab1,.ab2,.ab3{
+      display: none;
+   }
+
+   /*Cambiar tamaño de la clase about-img*/
+      /*Order:2 manda la imagen abajo*/
+   .about-img{
+      width: 100%;
+      order:2;
+   }
+
+   /*Cambiar tamaño de imagen de la clase about-img*/
+   .about-img img{
+      width: 250px;
+   }
+
+   /*Cambiar tamaño de la clase about-txt*/
+   .about-txt{
+      width: 100%;
+      text-align: center;
+   }
+
+   .about-txt a{
+      align-items: center;
+      margin-left: 120px;
+      width: 50%;
+   }
+
+   /*Cambiar tamaño de titulos*/
+      /*Line-height sirve para la altura de la letra*/
+   h2{
+      font-size: 70px;
+      line-height: 80px;
+   }
+
+   /*Cambiar tamaño de la clase information*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*Padding: arriba y abajo  |  izquierda y derecha*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .information{
+      padding: 30px 10px 100px 30px;
+      margin-bottom: -40px;
+   }
+
+   /*Cambiar tamaño del párrafo de la clase information*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .information p{
+      margin-top: -40px;
+      margin-bottom: 10px;
+   }
+
+   /*Ocultar imagenes de la clase information*/
+      /*Display: none oculta un elemento sin eliminarlo*/
+   .in1,.in2,.in3{
+      display: none;
+   }
+
+   /*Cambiar tamaño de la clase contact*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .contact{
+      padding: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+
+   /*Cambiar tamaño de la tabla de la clase contact*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .contact-table{
+      width: 95%;
+      margin-left: 10px;
+      margin-top: 30px;
+      padding: 20px 25px 25px 25px;
+      box-shadow: 0px 0px 20px #515A5A;
+   }
+
+   /*Cambiar tamaño de contenido del formulario de la clase contact*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .form-content{
+      padding: 1px;
+   }
+
+   /*Cambiar tamaño de los titulos de la clase form-content*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .form-content h2{
+      font-size: 38px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+   }
+
+   /*Cambiar tamaño del formulario de la clase contact*/
+      /*La propiedad flex-direction especifica como colocar los objetos al contenedor
+      definiendo el eje principal y la dirección*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   form{
+      flex-direction:column;
+      padding-left: -97px;
+      padding-right: 87px;
+   }
+
+   /*Cambiar tamaño al campo del formulario de la clase contact*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .campo{
+      margin-bottom: 40px;
+      margin-right: 40px;
+      font-size: 24px;
+   }
+
+   /*Cambiar estilo de los botones*/
+      /*La propiedad margin aplica margenes a un elemento*/
+
+   .btn-2{
+      display: block;
+      margin-left: 150px;
+   }
+   /*Cambiar tamaño del pie de página (footer)*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*Padding: arriba y abajo  |  izquierda y derecha*/
+   .footer{
+      padding: 30px 30px 0 30px;
+   }
+
+   /*Cambiar tamaño de la clase contPie2 del footer*/
+      /*Display: block muestra el elementos en una nueva linea y
+      tamaño personalizado*/
+      /*La propiedad space-evenly distribuye el espacio entre los elementos de manera
+      uniforme*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .contPie2{
+      display: block;
+      justify-content: space-evenly;
+      padding-bottom: 23px;
+   }
+
+   /*Cambiar tamaño de encabezados de la clase contPie2 del footer*/
+      /*La propiedad padding aplica relleno a un elemento*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .contPie2 h2{
+      padding-bottom: 5px;
+      text-align: center;
+      padding-top: 5px;
+      margin-top: 5px;
+   }
+
+   /*Cambiar tamaño de la clase contPie del footer*/
+      /*La propiedad display define el tipo de caja usado para presemtar el elemento
+      en pantalla*/
+      /*Display: block muestra el elementos en una nueva linea y
+      tamaño personalizado*/
+      /*La propiedad space-evenly distribuye el espacio entre los elementos de manera
+      uniforme*/
+   .contPie{
+      display: block;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+
+   /*Cambiar tamaño de la clase logo2 del footer*/
+      /*Display: block muestra el elementos en una nueva linea y
+      tamaño personalizado*/
+      /*La propiedad padding aplica relleno a un elemento*/
+   .logo2{
+      display:block;
+      padding-left: 80px;
+      align-items: center;
+   }
+
+   /*Cambiar tamaño de imagen de la clase logo2 del footer*/
+      /*La propiedad margin aplica margenes a un elemento*/
+   .logo2 img{
+      margin-left: 80px;
+      margin-top: 40px;
+      align-items: center;
+   }
+
+   /*Cambiar tamaño del párrafo de la clase logo2 del footer*/
+   .logo2 p{
+      margin-left: -15px;
+      margin-top: 10px;
+      padding-top: 12px;
+      align-items: center;
+      font-size: 50px;
+   }
+
+   .socials-2 img{
+      width: 40px;
+      margin-left: 45px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+   }
+}
