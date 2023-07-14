@@ -308,12 +308,12 @@ h2{
    margin-bottom: 25px;
 }
 
-/*Aplicar estilo a botón 2 y 3*/
+/*Aplicar estilo a botón 2*/
    /*Display: inline-block muestra el elemento en la misma linea y
    tamaño personalizado*/
    /*La propiedad padding aplica relleno a un elemento*/
    /*Padding: arriba y abajo  |  izquierda y derecha*/
-.btn-2,.btn-3{
+.btn-2{
    display: block;
    padding: 13px 45px;
    margin-left: 220px;
@@ -329,7 +329,7 @@ h2{
 }
 
 /*Aplicar estilo a botón 2 al pasar por él*/
-.btn-2:hover,.btn-3:hover{
+.btn-2:hover{
    background-color: #F9AD20;
    color:#442F08 ;
 }
@@ -544,6 +544,22 @@ th{
 /*Aplicar estilo al titulo del formulario*/
 .form-content h2{
    font-size: 50px;
+}
+
+/*Aplicar estilo a botón 3 (Enviar)*/
+.btn-3{
+   display: block;
+   padding: 13px 45px;
+   margin-left: 220px;
+   margin-top: 25px;
+   background-color: #E56820;
+   color:#FFFFFF;
+   border-radius: 25px;
+   font-size: 18px;
+   border:0;
+   font-family: 'Bebas Neue', sans-serif;
+   cursor:pointer;
+   align-items: center;
 }
 
 /*FOOTER*/
