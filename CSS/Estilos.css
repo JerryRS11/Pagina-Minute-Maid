@@ -961,7 +961,7 @@ th{
 
    /*Cambiar tamaño del párrafo de la clase logo2 del footer*/
    .logo2 p{
-      margin-left: -20px;
+      margin-left: -40px;
       margin-top: 10px;
       padding-top: 12px;
       align-items: center;
