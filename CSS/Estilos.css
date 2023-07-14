@@ -877,6 +877,12 @@ th{
       display: block;
       margin-left: 150px;
    }
+
+   .btn-3{
+      display: block;
+      margin-left: 150px;
+   }
+   
    /*Cambiar tamaño del pie de página (footer)*/
       /*La propiedad padding aplica relleno a un elemento*/
       /*Padding: arriba y abajo  |  izquierda y derecha*/
